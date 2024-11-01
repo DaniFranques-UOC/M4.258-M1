@@ -1,0 +1,49 @@
+/* ------------------------------------------------------------*\
+Galeria monument
+\*------------------------------------------------------------ */
+
+  .image__monument {
+    width: 160px;
+    height: 120px;
+    box-shadow: 0 0 5px 0 rgba(black, .5);
+    @media (min-width: $mqMinWidth) {
+        width: 320px;
+        height: 240px;
+        }  
+  } 
+
+  .image--main__monument {
+    width: 320px;
+    height: 240px;
+// border: 2px solid black;
+    box-shadow: 0 0 5px 0 rgba(black, .5);
+    align-self: center;
+    @media (min-width: $mqMinWidth) {
+        width: 640px;
+        height: 480px;
+        }  
+} 
+
+.section--gallery__monument {
+  // align-self: center;
+  display:flex;
+  flex-direction: column;
+  align-content: center;
+  flex-wrap: wrap;  
+  
+  @media (min-width: $mqMinWidth) {
+    flex-wrap: nowrap;
+    align-items: flex-start;
+    flex-direction: row;
+    }  
+}
+  .section--gallery__text {
+    padding: 10px;
+    padding-top :0;
+    align-self: flex-start;
+  }
+
+  .section--gallery__image {
+    align-self: center;
+    padding: 5px;
+  }

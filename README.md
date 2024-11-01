@@ -26,6 +26,8 @@ Using the Terminal, navigate to the project folder and run `npm install`.
 - [PostCSS](https://postcss.org/) features:
   - Transpile modern CSS with [`postcss-preset-env`](https://preset-env.cssdb.org/features).
   - Automatically add CSS prefix to unsupported properties with [`autoprefixer`](https://autoprefixer.github.io/).
+- [MQ](https://github.com/sass-mq/sass-mq) features:
+  - Compiles keywords and px/em values to em -based queries
 
 ### HTML
 

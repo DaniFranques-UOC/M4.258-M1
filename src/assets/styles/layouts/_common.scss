@@ -1,0 +1,49 @@
+
+/* ------------------------------------------------------------*\
+Common
+\*------------------------------------------------------------ */
+.picture-credit {
+    font-size: 10px;
+    color: $font-color-credit;
+  }
+
+.image__monument {
+    width: 160px;
+    height: 120px;
+    @media (min-width: $mqMinWidth) {
+      width: 320px;
+      height: 240px;
+      border: 1px solid black;
+        }  
+  }  
+
+.image__monument:hover {
+    @media (min-width: $mqMinWidth) {
+      transition: transform 0.5s;
+      transform: scale(1.051);
+        }  
+  }  
+
+.section {
+    max-width: $site-width;
+    display: block;
+    margin: 40px auto;
+    text-align: center;
+    padding: 20px;
+  }
+
+.section__cols {
+    @media (min-width: $mqMinWidth) {
+        display: flex;
+    }  
+  }
+.section__left-column,
+.section__right-column {
+    flex-basis: auto;
+  }
+
+  
+.section__right-column {
+    display: flex;
+    justify-content: flex-end;
+  }
