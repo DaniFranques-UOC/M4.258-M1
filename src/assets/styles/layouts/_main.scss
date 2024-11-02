@@ -2,7 +2,7 @@
 Galeria monument
 \*------------------------------------------------------------ */
 
-  .image__monument {
+.image__monument {
     width: 160px;
     height: 120px;
     box-shadow: 0 0 5px 0 rgba(black, .5);
@@ -10,12 +10,11 @@ Galeria monument
         width: 320px;
         height: 240px;
         }  
-  } 
+} 
 
-  .image--main__monument {
+.image--main__monument {
     width: 320px;
     height: 240px;
-// border: 2px solid black;
     box-shadow: 0 0 5px 0 rgba(black, .5);
     align-self: center;
     @media (min-width: $mqMinWidth) {
@@ -35,15 +34,15 @@ Galeria monument
     flex-wrap: nowrap;
     align-items: flex-start;
     flex-direction: row;
-    }  
+  }  
 }
-  .section--gallery__text {
+.section--gallery__text {
     padding: 10px;
     padding-top :0;
-    align-self: flex-start;
-  }
+    align-self: stretch;
+}
 
-  .section--gallery__image {
+.section--gallery__image {
     align-self: center;
     padding: 5px;
-  }
+}
