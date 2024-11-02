@@ -13,15 +13,15 @@ Common
     @media (min-width: $mqMinWidth) {
       width: 320px;
       height: 240px;
-      border: 1px solid black;
-        }  
+      border: 1px solid $font-color-dark;
+    }  
   }  
 
 .image__monument:hover {
     @media (min-width: $mqMinWidth) {
       transition: transform 0.5s;
       transform: scale(1.051);
-        }  
+    }  
   }  
 
 .section {
@@ -34,13 +34,12 @@ Common
 
 .section__cols {
     @media (min-width: $mqMinWidth) {
-        display: flex;
+      display: flex;
     }  
   }
+
 .section__left-column,
-.section__right-column {
-    flex-basis: auto;
-  }
+.section__right-column { flex-basis: auto; }
 
   
 .section__right-column {

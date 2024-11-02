@@ -1,26 +1,25 @@
 
-.navigation {
+@mixin box-navigation() {
     box-sizing: border-box;
     width: 100%;
+}
+
+
+.navigation {
+    @include box-navigation();
     background: $backcolor-menu;
-    box-shadow: 0 0 5px 0 rgba(black, .5);
+    box-shadow: 0 0 5px 0 rgba($font-color-dark, .5);
 
     &__list {
+        @include box-navigation();
         list-style: none;
-        box-sizing: border-box;
-        width: 100%;
         justify-content: right;
         margin: 0;
         padding: 16px;
-
-        
         @media (min-width: $mqMinWidth) {
             display: flex;
             flex-wrap: nowrap;
         }        
-    }
-    &__item {
-        color: red;
     }
 
     &__link {
@@ -30,7 +29,6 @@
     margin: 0 15px;
     padding: 10px;
     font-size: 1.5em;
-
         @media (min-width: $mqMinWidth) {
             font-size: 1em;
         }        
@@ -39,6 +37,5 @@
 
 nav ul li a:hover {
     border: none;
-    color: $color-menu;
     color: $font-color-dark;
 }
