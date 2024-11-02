@@ -2,34 +2,37 @@
 Galeria monument
 \*------------------------------------------------------------ */
 
-.image__monument {
-    width: 160px;
-    height: 120px;
-    box-shadow: 0 0 5px 0 rgba(black, .5);
-    @media (min-width: $mqMinWidth) {
-        width: 320px;
-        height: 240px;
-        }  
+.image--main__monument {
+  width: 320px;
+  height: 240px;
+  box-shadow: 0 0 5px 0 rgba(black, .5);
+  align-self: center;
+  @media (min-width: $mqMinWidth) {
+      width: 640px;
+      height: 480px;
+  }  
 } 
 
-.image--main__monument {
-    width: 320px;
-    height: 240px;
-    box-shadow: 0 0 5px 0 rgba(black, .5);
-    align-self: center;
-    @media (min-width: $mqMinWidth) {
-        width: 640px;
-        height: 480px;
-        }  
-} 
+.image__monument {
+  width: 320px;
+  height: 240px;
+  @media (min-width: $mqMinWidth) {
+    border: 1px solid $font-color-dark;
+  }  
+}  
+
+.image__monument:hover {
+  @media (min-width: $mqMinWidth) {
+    transition: transform 0.5s;
+    transform: scale(1.051);
+  }  
+}  
 
 .section--gallery__monument {
-  // align-self: center;
   display:flex;
   flex-direction: column;
   align-content: center;
   flex-wrap: wrap;  
-  
   @media (min-width: $mqMinWidth) {
     flex-wrap: nowrap;
     align-items: flex-start;
@@ -45,4 +48,9 @@ Galeria monument
 .section--gallery__image {
     align-self: center;
     padding: 5px;
+}
+
+.monument h3 {
+  font-size: 40px;
+  color:red;
 }

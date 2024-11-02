@@ -7,21 +7,6 @@ Common
     color: $font-color-credit;
   }
 
-.image__monument {
-    width: 320px;
-    height: 240px;
-  @media (min-width: $mqMinWidth) {
-      border: 1px solid $font-color-dark;
-    }  
-  }  
-
-.image__monument:hover {
-    @media (min-width: $mqMinWidth) {
-      transition: transform 0.5s;
-      transform: scale(1.051);
-    }  
-  }  
-
 .titol {
   font-size: 30px;
   text-align: center;
