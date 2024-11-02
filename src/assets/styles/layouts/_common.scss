@@ -11,13 +11,18 @@ Common
   font-size: 30px;
   text-align: center;
 }
+
 .section {
     max-width: $site-width;
     display: block;
     margin: 40px auto;
     text-align: center;
     padding: 20px;
-  }
+    @media (min-width: $mqMinWidth) {
+      padding: 0px;
+      margin: 10px auto;
+    }  
+}
 
 .section__inici {
   display:flex;
@@ -32,8 +37,9 @@ Common
   }
 
 .section__left-column,
-.section__right-column { flex-basis: auto; }
-
+.section__right-column { 
+  flex-basis: auto; 
+}
   
 .section__right-column {
     display: flex;

@@ -45,12 +45,15 @@ Galeria monument
     align-self: stretch;
 }
 
+.section--gallery__text h3 {
+  text-align:center;
+  @media (min-width: $mqMinWidth) {
+      text-align:left;
+    }  
+  }
+
 .section--gallery__image {
     align-self: center;
     padding: 5px;
 }
 
-.monument h3 {
-  font-size: 40px;
-  color:red;
-}
