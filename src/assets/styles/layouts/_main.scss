@@ -1,5 +1,5 @@
 /* ------------------------------------------------------------*\
-Galeria monument
+SECTION monument
 \*------------------------------------------------------------ */
 
 .image--main__monument {
@@ -50,10 +50,9 @@ Galeria monument
   @media (min-width: $mqMinWidth) {
       text-align:left;
     }  
-  }
+}
 
 .section--gallery__image {
-    // align-self: center;
     align-self: stretch;
     padding: 5px;
 }

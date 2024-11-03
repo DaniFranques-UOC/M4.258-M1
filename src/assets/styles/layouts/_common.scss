@@ -5,7 +5,7 @@ Common
 .picture-credit {
     font-size: 10px;
     color: $font-color-credit;
-  }
+}
 
 .titol {
   font-size: 30px;
@@ -34,7 +34,7 @@ Common
     @media (min-width: $mqMinWidth) {
       display: flex;
     }  
-  }
+}
 
 .section__left-column,
 .section__right-column { 
@@ -44,4 +44,4 @@ Common
 .section__right-column {
     display: flex;
     justify-content: flex-end;
-  }
+}
